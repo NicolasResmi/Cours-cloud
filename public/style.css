@@ -1,0 +1,54 @@
+.cb {
+  display:flex;
+  color:red;
+  flex-direction:row;
+  flex-flow:wrap;
+}
+
+.cb-border {
+  border:black 2px solid;
+  display:flex;
+  flex-direction:column;
+  margin:10px;
+  padding:10px;
+  width:300px;
+}
+
+.cb-delete{
+  display:flex;
+  flex-direction:row;
+}
+
+.row{
+  display: flex;
+}
+
+.my_class{
+  width: 40%;
+}
+
+.my_class img{
+  width: 50%;
+}
+
+body{
+  background-image: url("background.jpeg");
+	background-size: cover;
+}
+
+.col-md-12 a{
+  color: black;
+}
+
+.col-md-12 a:hover{
+  color: blue;
+}
+
+.row{
+  background-color: white;
+  border-radius: 5px;
+}
+
+.user_anthentification a{
+  background-color: white;
+}
