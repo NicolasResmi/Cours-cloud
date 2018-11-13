@@ -7,7 +7,7 @@ disk: 2048 #2G
 web:
     locations:
         "/":
-            root: "public"
+            root: "src/templates"
             passthru: "/index.php"
             index:
                 - index.php
