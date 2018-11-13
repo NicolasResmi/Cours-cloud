@@ -1,5 +1,5 @@
 name: app
-type: php:5.7
+type: php:5.5
 build:
     flavor: composer
 disk: 2048 #2G
@@ -7,7 +7,7 @@ disk: 2048 #2G
 web:
     locations:
         "/":
-            root: "src/templates"
+            root: "public"
             passthru: "/index.php"
             index:
                 - index.php
