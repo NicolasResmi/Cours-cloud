@@ -8,7 +8,7 @@ web:
     locations:
         "/":
             root: "app"
-            passthru: "/public/index.php"
+            passthru: "/index.php"
             index:
                 - index.php
             allow: true
