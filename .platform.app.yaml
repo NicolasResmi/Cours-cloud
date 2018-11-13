@@ -1,5 +1,5 @@
 name: app
-type: php:5.5
+type: php:5.6
 build:
     flavor: composer
 disk: 2048 #2G
@@ -13,5 +13,9 @@ web:
                 - index.php
             allow: true
 
+mydatabase:
+    type: mysql:10.0
+    disk: 1024
+
 relationships:
-    database: 'database1:storage'
+    database: "mydatabase:mysql"
