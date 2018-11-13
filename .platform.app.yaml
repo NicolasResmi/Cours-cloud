@@ -1,5 +1,5 @@
 name: app
-type: php:7.1.10
+type: php:7.1.1
 build:
     flavor: composer
 disk: 2048 #2G
