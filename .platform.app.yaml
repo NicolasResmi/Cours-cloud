@@ -18,4 +18,4 @@ mydatabase:
     disk: 1024
 
 relationships:
-    database: "mydatabase:mysql"
+    database: "mydatabase:storage"
