@@ -13,9 +13,6 @@ web:
                 - index.php
             allow: true
 
-mydatabase:
-    type: mysql:10.0
-    disk: 1024
 
 relationships:
-    database: "mydatabase:storage"
+    database: storage.sql
