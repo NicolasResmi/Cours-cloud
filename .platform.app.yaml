@@ -13,6 +13,5 @@ web:
                 - index.php
             allow: true
 
-
 relationships:
-    database: "mydatabase:storage"
+    database: 'database1:mysql'
