@@ -12,3 +12,6 @@ web:
             index:
                 - index.php
             allow: true
+
+relationships:
+    database: 'database1:mysql'
