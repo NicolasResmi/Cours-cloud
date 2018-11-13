@@ -15,4 +15,4 @@ web:
 
 
 relationships:
-    database: storage.sql
+    database: "mydatabase:storage"
