@@ -14,4 +14,4 @@ web:
             allow: true
 
 relationships:
-    database: 'database1:php_poo'
+    database: 'database1:php_poo.sql'
