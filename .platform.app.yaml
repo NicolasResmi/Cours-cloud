@@ -14,4 +14,4 @@ web:
             allow: true
 
 relationships:
-    database: 'storage.sql'
+    database: 'database1:mysql'
