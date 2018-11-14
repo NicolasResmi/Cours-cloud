@@ -19,4 +19,4 @@ web:
         protocol: http
 
 relationships:
-    database1: 'storage:mysql'
+    database: 'php_poo:mysql'
