@@ -1,13 +1,11 @@
-<!-- <?php
-
-// define('MYSQL_USER', 'root');
+<!-- // define('MYSQL_USER', 'root');
 // define('MYSQL_PASSWORD', 'root');
 // define('MYSQL_DATABASE', 'tpPoo');
 // define('MYSQL_HOST', 'localhost');
 // define('MYSQL_PORT', 8889);
-// define('MYSQL_SOCKET', '/tmp/mysql.sock');
- -->
+// define('MYSQL_SOCKET', '/tmp/mysql.sock'); -->
 
+<?php 
 // This assumes a fictional application with an array named $settings.
 $relationships = getenv('PLATFORM_RELATIONSHIPS');
 if ($relationships) {
@@ -26,3 +24,4 @@ if ($relationships) {
 		}
 	}
 }
+?>
