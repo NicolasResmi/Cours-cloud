@@ -1,19 +1,33 @@
-# Use postgres/example user/password credentials
-version: '3.1'
+version: "3.1"
 
-services:
-
-  db:
-    image: postgres:latest
-    restart: unless-stopped
-    environment:
-      POSTGRES_DB: nomdelabasededonnees
-      POSTGRES_USER: marc
-      POSTGRES_PASSWORD: saucisson
+services: 
+  database:
+    image: "postgres:latest"
+    restart: "unless-stopped"
+    environment: 
+      POSTGRES_DB: "courswsf"
+      POSTGRES_USER: "loic"
+      POSTGRES_PASSWORD: "azerty"
     volumes:
-      - cours:/var/lib/postgresql/data
-    ports:
-      - 5432:5432
+      - "cours:/var/lib/postgresql/data"
+    ports: 
+      - "5432:5432"
 
 volumes:
   cours:
+
+
+version: '2'
+
+services:
+  redis:
+    image: 'redis:latest'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - '6379:6379'
+    volumes:
+      - "redis-persistence:/bitnami/redis/data"
+
+volumes:
+redis-persistence:
