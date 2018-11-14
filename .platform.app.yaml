@@ -12,6 +12,11 @@ web:
             index:
                 - index.php
             allow: true
+    commands: 
+        start: php run.php
+    upstream:
+        socket_family: tcp
+        protocol: http
 
 relationships:
-    database: 'database1:storage.sql'
+    database: 'php_poo:mysql'
