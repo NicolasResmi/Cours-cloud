@@ -19,7 +19,7 @@ if ($relationships) {
 			$settings['database_name'] = 'php_poo';
 			$settings['database_port'] = 8889;
 			$settings['database_user'] = 'root';
-			$settings['database_password'] = '';
+			$settings['database_password'] = 'root';
 			break;
 		}
 	}
