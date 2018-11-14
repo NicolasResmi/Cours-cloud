@@ -15,8 +15,8 @@ if ($relationships) {
 	if (!empty($relationships['database'])) {
 		foreach ($relationships['database'] as $endpoint) {
 			$settings['database_driver'] = 'pdo_' . $endpoint['scheme'];
-			$settings['database_host'] = 'localhost';
-			$settings['database_name'] = 'php_poo';
+			$settings['database_host'] = '$endpoint['host']';
+			$settings['database_name'] = 'tpPoo';
 			$settings['database_port'] = 8889;
 			$settings['database_user'] = 'root';
 			$settings['database_password'] = 'root';
