@@ -12,7 +12,7 @@
 // This assumes a fictional application with an array named $settings.
 $relationships = getenv('PLATFORM_RELATIONSHIPS');
 var_dump($relationships);
-
+die;
 if ($relationships) {
 	$relationships = json_decode(base64_decode($relationships), TRUE);
 	// For a relationship named 'database' referring to one endpoint.
