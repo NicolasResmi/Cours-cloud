@@ -6,9 +6,8 @@
 // define('MYSQL_HOST', 'localhost');
 // define('MYSQL_PORT', 8889);
 // define('MYSQL_SOCKET', '/tmp/mysql.sock');
-?> -->
+ -->
 
-<?php
 // This assumes a fictional application with an array named $settings.
 $relationships = getenv('PLATFORM_RELATIONSHIPS');
 if ($relationships) {
@@ -27,4 +26,3 @@ if ($relationships) {
 		}
 	}
 }
-?>
